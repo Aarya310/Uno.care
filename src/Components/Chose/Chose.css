@@ -1,0 +1,80 @@
+/* General styling for the section */
+section {
+    background-color: white; /* Background of the whole section */
+    padding: 20px 0;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h4 {
+    background-color: blue; /* Blue box for the heading */
+    color: white; /* White text color */
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    flex: 1 1 200px; /* Flex grow, shrink, and basis */
+    max-width: 300px;
+    margin: 10px;
+    height:300px ;
+  }
+  .b{
+    color: blue;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 50%;
+   
+  }
+  
+  .card p {
+    padding: 15px;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+ 
+  .card span {
+    color: rgb(172, 162, 162);
+    display: block;
+    margin: 10px 0px;
+  }
+  
+  @media (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      max-width: 90%;
+    }
+  }
+  

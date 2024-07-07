@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .home-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px; /* Adjust based on the height of the navbar */
+    height: calc(100vh - 700px); /* Adjust the height to cover the remaining viewport height after the navbar */
+  }
+  
+  .home-left {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  
+  .home-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .home-right img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+  h1 {
+    margin-top: 200px;
+    font-size: 3em;
+    color: blue;
+   margin-right: 700px ;
+  }
+  
+  h1 span {
+    background-color: #2b1ccb;
+    color: white; /* Highlighted text color */
+  }
+  
+  .service{
+    margin-top: 1px;
+    margin-right: 1120px;
+    font-size: 3em;
+  }
+  .para {
+    margin-top: 20px;
+    margin-right: 900px;
+    font-size: 20px;
+  }
+  .hr{
+    color: blue;
+  }
+  
+  .para p {
+    /* margin: 0; */
+    line-height: 1.5;
+  }
+  
+  .p2{
+ margin-top: 1px;
+ margin-right: 125px;
+  }
+  .req {
+    margin-top: 20px;
+  }
+  
+  .req button {
+    background-color: blue;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3em;
+    margin-top: 30px;
+    margin-right: 1100px;
+    border-radius: 5px;
+  }
+  
+  .social-icons {
+    margin-top: 60px;
+    margin-right: 1170px;
+  }
+  
+  .social-icons svg {
+    margin-right: 10px;
+    color: blue;
+    font-size: 1.5em;
+    
+  }
+  
+  .mail {
+    margin-top: 20px;
+    background-color: rgb(162, 222, 228);
+    color: rgb(107, 86, 213);
+    padding: 7px;
+    display: flex;
+    width: 170px;
+    align-items: center;
+    margin-left: 80px;
+  }
+  
+  .mail svg {
+    margin-right: 10px;
+    color: rgb(34, 31, 173);
+  }
+
+  .home-right{
+    justify-content: right;
+    margin-right: 200px;
+    margin-top: -500px;
+ 
+  }
+  .img{
+    height: 170h;
+  }
+  
+  @media (max-width: 768px) {
+    .home-container {
+      flex-direction: column;
+      height: auto; /* Adjust the height for smaller screens */
+    }
+  
+    .home-left, .home-right {
+      flex: 100%;
+      text-align: center;
+      height: auto; /* Adjust the height for smaller screens */
+    }
+  
+    .home-right img {
+      max-width: 80%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    .req button {
+      padding: 8px 16px;
+      font-size: 0.9em;
+    }
+  
+    .social-icons svg {
+      font-size: 1.2em;
+    }
+  
+    .mail {
+      padding: 8px;
+      font-size: 0.9em;
+    }
+  }
+  

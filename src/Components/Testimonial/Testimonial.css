@@ -1,0 +1,141 @@
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .headingi h4 {
+    margin: 70px;
+  }
+  
+  .slider {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 50%;
+  }
+  
+  .arrow {
+    background: black;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    
+  }
+  
+  .cardis {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .cardi {
+    display: flex;
+    border: 1px solid #ddd;
+    
+    padding: 20px;
+    border-radius: 10px;
+    width: 700px;
+    height: 220px;
+    background-color: white;
+    transition: border-color 0.3s ease;
+  }
+  
+  .cardi:hover {
+    border-color: blue;
+  }
+  
+  .cardi-left img {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 5%;
+    box-sizing: 2px;
+  }
+  
+  .cardi-right {
+    flex: 1;
+    margin-left: 40px;
+  }
+  
+  .cardi-right p {
+    margin: 0 0 10px;
+  }
+  
+  .cardi-right b {
+    display: block;
+  }
+  
+  .cardi-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .rating {
+    color: #ffd700;
+    font-size: 1.2rem;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .slider {
+      flex-direction: column;
+    }
+  
+    .cardi {
+      flex-direction: column;
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .cardi-left img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .cardi-right {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .arrow {
+      font-size: 1.5rem;
+    }
+  
+    .rating {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .testimonial-container {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    .cardi {
+      padding: 10px;
+    }
+  
+    .cardi-left img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .arrow {
+      font-size: 1.2rem;
+    }
+  
+    .rating {
+      font-size: 0.8rem;
+    }
+  }
+  

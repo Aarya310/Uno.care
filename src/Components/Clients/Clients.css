@@ -1,0 +1,45 @@
+/* Overall container styling */
+.ov {
+    margin-top: 300px;
+    background-color: rgb(250, 254, 255); /* Background of the complete section */
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 210px;
+  }
+  
+  /* Section container styling */
+  .heading {
+    position: absolute;
+    top: -25px; /* Move the heading box upwards to overlap the border */
+    background-color: rgb(220, 237, 243); /* Light blue box for heading */
+    padding: 2px 4px;
+    border: 1px solid rgb(237, 231, 231);
+    border-radius: 5px;
+   color: blue;
+  }
+  
+  .images img {
+    border-radius: 50%; /* Circular boundaries for images */
+    margin: 10px;
+    height: 120px; /* Adjust size as needed */
+    width: 120px; /* Adjust size as needed */
+    object-fit: cover; /* Ensure images fit within the circles */
+    border: 1px solid black; /* Optional: black border around images */
+  }
+  
+  /* Inner white box styling */
+  .images {
+    display: flex;
+    gap: 30px;
+    justify-content: center; /* Center the images */
+    align-items: center;
+    border: 1px solid black; /* Black border for the white box */
+    background-color: white; /* White background for the box */
+    padding: 20px;
+    margin-top: 30px; /* Ensure there's space between the heading and images */
+    width: 80%; /* Adjust width as needed */
+    position: relative;
+  }
+  
